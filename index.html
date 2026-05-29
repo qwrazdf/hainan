@@ -20,6 +20,7 @@
         <span>qwrazdf</span>
       </a>
       <nav aria-label="页面导航">
+        <a href="#map">地图</a>
         <a href="#route">路线</a>
         <a href="#food">美食</a>
         <a href="#budget">费用</a>
@@ -38,12 +39,12 @@
           <p class="eyebrow">2026.06.02 晚到三亚 / 合肥出发</p>
           <h1 id="hero-title">海南海风计划</h1>
           <p class="hero-copy">
-            三亚 2-3 天看海、吃海鲜、拍日落，再坐环岛动车去海口，用 2 天收尾骑楼老街、老爸茶、云洞和火山口。
+            三亚住椰梦长廊 3 晚：西岛负责海岛和赶海氛围，亚龙湾/太阳湾负责好海好沙滩，天涯小镇、半山半岛和鹿回头负责拍照收尾；香水化妆品优先放海口日月广场或机场免税店。
           </p>
           <div class="hero-actions" aria-label="计划版本">
             <button class="plan-toggle active" type="button" data-plan="relaxed">
               <i data-lucide="waves"></i>
-              松弛 6天
+              确定版 6天
             </button>
             <button class="plan-toggle" type="button" data-plan="compact">
               <i data-lucide="timer"></i>
@@ -53,7 +54,7 @@
           <dl class="hero-facts">
             <div>
               <dt>主线</dt>
-              <dd>三亚湾/西岛 → 海口湾</dd>
+              <dd>三亚 3 天 → 海口 2 天</dd>
             </div>
             <div>
               <dt>节奏</dt>
@@ -67,7 +68,10 @@
           <div class="hero-stamps" aria-label="旅行关键词">
             <span>海景房</span>
             <span>比基尼</span>
-            <span>西岛日落</span>
+            <span>亚龙湾海滩</span>
+            <span>西岛</span>
+            <span>日月广场免税</span>
+            <span>椰梦日落</span>
             <span>老爸茶</span>
           </div>
         </div>
@@ -79,7 +83,10 @@
           <span>清补凉续命</span>
           <span>傍晚沙滩</span>
           <span>海口湾骑行</span>
-          <span>西岛拍照</span>
+          <span>亚龙湾看海</span>
+          <span>西岛玩海</span>
+          <span>日月广场补货</span>
+          <span>天涯小镇拍照</span>
           <span>海鲜先问价</span>
           <span>低潮再赶海</span>
           <span>云洞看落日</span>
@@ -100,13 +107,131 @@
           <article class="signal">
             <i data-lucide="hotel"></i>
             <h2>住宿建议</h2>
-            <p>三亚优先三亚湾海景/近海房，西岛和机场都顺路；海口住骑楼老街或海口湾，夜宵和出行更省心。</p>
+            <p>三亚住椰梦长廊：离海近、机场近、去三亚站不绕，吃饭也比海棠湾方便；真正好看的海放到西岛和亚龙湾补足。</p>
           </article>
           <article class="signal">
             <i data-lucide="train-front"></i>
             <h2>城市转场</h2>
-            <p>三亚到海口坐环岛动车，优先看三亚站/亚龙湾站到海口东或美兰站，按返程航班选终点。</p>
+            <p>6 月 5 日晚上去海口，优先看三亚站到海口东或美兰站；免税购物放到海口更顺，三亚 cdf 只在走蜈支洲/海棠湾时顺路加。</p>
           </article>
+        </div>
+      </section>
+
+      <section id="map" class="section route-position" aria-labelledby="map-title">
+        <div class="section-inner">
+          <div class="section-heading compact">
+            <div>
+              <p class="eyebrow">Map Logic</p>
+              <h2 id="map-title">三亚位置关系图</h2>
+            </div>
+            <p class="heading-side">按你的新版来：西岛和亚龙湾是主菜，免税不单独跑远路，三亚第三晚转海口。</p>
+          </div>
+          <div class="map-shell reference-map-grid reveal" aria-label="三亚参考地图">
+            <figure class="reference-map missing-image">
+              <img
+                src="./assets/sanya-3day-route.jpg"
+                alt="三亚三天路线安排参考图"
+                loading="lazy"
+                onload="this.closest('.reference-map').classList.remove('missing-image')"
+                onerror="this.remove()"
+              />
+              <figcaption>
+                <strong>三亚 3 天路线安排</strong>
+                <span>Day1 西岛 + 椰梦长廊，Day2 亚龙湾/太阳湾 + 可选免税，Day3 天涯小镇/半山半岛/鹿回头。</span>
+              </figcaption>
+              <div class="image-drop-note">把第一张截图保存为 <code>assets/sanya-3day-route.jpg</code> 后会自动显示。</div>
+            </figure>
+            <figure class="reference-map missing-image">
+              <img
+                src="./assets/sanya-overview-map.jpg"
+                alt="三亚景点分布参考图"
+                loading="lazy"
+                onload="this.closest('.reference-map').classList.remove('missing-image')"
+                onerror="this.remove()"
+              />
+              <figcaption>
+                <strong>三亚景点分布图</strong>
+                <span>用于看椰梦长廊、机场、三亚站、西岛、亚龙湾、海棠湾和海口免税点的位置关系。</span>
+              </figcaption>
+              <div class="image-drop-note">把第二张截图保存为 <code>assets/sanya-overview-map.jpg</code> 后会自动显示。</div>
+            </figure>
+          </div>
+          <div class="route-cards" aria-label="按天路线">
+            <article>
+              <i data-lucide="plane-landing"></i>
+              <h3>到达夜</h3>
+              <p>6/2 晚：凤凰机场 → 椰梦长廊酒店。三晚不换住处，近海、近机场。</p>
+            </article>
+            <article>
+              <i data-lucide="landmark"></i>
+              <h3>三亚 Day1</h3>
+              <p>西岛渔村 → 牛王岭/乌龟滩 → 轻度赶海 → 椰梦长廊日落。</p>
+            </article>
+            <article>
+              <i data-lucide="waves"></i>
+              <h3>三亚 Day2</h3>
+              <p>亚龙湾/太阳湾 → 亚龙湾公共海滩；海棠湾 cdf 只作为可选。</p>
+            </article>
+            <article>
+              <i data-lucide="train-front"></i>
+              <h3>三亚 Day3</h3>
+              <p>天涯小镇或南山二选一 → 半山半岛帆船港 → 鹿回头 → 海口。</p>
+            </article>
+          </div>
+          <div class="route-decision-grid" aria-label="住宿、海湾和免税取舍">
+            <article>
+              <i data-lucide="hotel"></i>
+              <h3>住椰梦长廊</h3>
+              <p>优势是离海近、看日落方便、机场和三亚站都不远，吃海鲜和夜市比海棠湾省心。</p>
+            </article>
+            <article>
+              <i data-lucide="waves"></i>
+              <h3>西岛优先</h3>
+              <p>更顺路、更控费，适合拍照、渔村、牛王岭、礁石海岸和轻度赶海氛围。</p>
+            </article>
+            <article>
+              <i data-lucide="sparkles"></i>
+              <h3>蜈支洲备选</h3>
+              <p>想要潜水、摩托艇等更强水上项目时再替换西岛，并顺路考虑海棠湾 cdf。</p>
+            </article>
+            <article>
+              <i data-lucide="shopping-bag"></i>
+              <h3>免税放海口</h3>
+              <p>香化优先日月广场，时间充裕再去海口国际免税城；美兰机场适合最后补货。</p>
+            </article>
+          </div>
+          <div class="final-route-table" aria-label="最终优化版路线">
+            <article>
+              <span>6月2日</span>
+              <strong>三亚</strong>
+              <p>合肥出发，晚到三亚，住椰梦长廊。</p>
+            </article>
+            <article>
+              <span>6月3日</span>
+              <strong>西岛 + 椰梦长廊</strong>
+              <p>西岛渔村、牛王岭、乌龟滩、轻度赶海氛围，晚上椰梦长廊日落和海鲜。</p>
+            </article>
+            <article>
+              <span>6月4日</span>
+              <strong>亚龙湾/太阳湾</strong>
+              <p>森林公园或太阳湾公路，下午亚龙湾公共海滩；海棠湾 cdf 仅作为可选。</p>
+            </article>
+            <article>
+              <span>6月5日</span>
+              <strong>三亚 → 海口</strong>
+              <p>天涯小镇或南山二选一，半山半岛、鹿回头，晚上动车去海口。</p>
+            </article>
+            <article>
+              <span>6月6日</span>
+              <strong>海口</strong>
+              <p>老爸茶、日月广场免税店、云洞图书馆/天空之山、海口湾和夜市。</p>
+            </article>
+            <article>
+              <span>6月7日</span>
+              <strong>海口 → 合肥</strong>
+              <p>轻松早餐、老街补逛或美兰机场免税补货，返程回合肥。</p>
+            </article>
+          </div>
         </div>
       </section>
 
@@ -123,22 +248,22 @@
             <article class="vibe-card">
               <i data-lucide="umbrella"></i>
               <h3>三亚湾做基地</h3>
-              <p>离机场近、海景房多，第一晚和最后一个三亚傍晚都不折腾。</p>
+              <p>椰梦长廊离海近、日落好、价格相对友好，机场和三亚站都比住海棠湾省路。</p>
             </article>
             <article class="vibe-card">
               <i data-lucide="camera"></i>
-              <h3>西岛拍一整天</h3>
-              <p>渔村、海边路、牛王岭都适合轻松拍照，比连续跑景点更好看。</p>
+              <h3>西岛做核心海岛</h3>
+              <p>渔村、白墙小路、牛王岭、乌龟滩和礁石海岸更贴近拍照与轻度假，路程也顺。</p>
             </article>
             <article class="vibe-card">
               <i data-lucide="sparkles"></i>
-              <h3>项目只留一个</h3>
-              <p>后海冲浪、蜈支洲水上项目、旅拍选一个就够，别把假期排成训练营。</p>
+              <h3>亚龙湾补海水</h3>
+              <p>三亚湾负责日落，亚龙湾和太阳湾负责蓝海、沙滩、比基尼和更好看的海岸线。</p>
             </article>
             <article class="vibe-card">
-              <i data-lucide="bike"></i>
-              <h3>海口慢下来</h3>
-              <p>老爸茶、骑楼老街、云洞和海口湾骑行，是比赶景点更舒服的收尾。</p>
+              <i data-lucide="shopping-bag"></i>
+              <h3>免税不抢玩海</h3>
+              <p>三亚 cdf 只在走海棠湾东线时顺路加；主购物放海口日月广场，返程机场补缺。</p>
             </article>
           </div>
         </div>
@@ -150,7 +275,7 @@
             <p class="eyebrow">Route</p>
             <h2 id="route-title">逐日路线</h2>
             <p>
-              默认按 2026 年 6 月 2 日晚上到三亚设计。若想少请假，切到紧凑版；若想更像度假，保留 6 月 7 日返程。
+              默认按 2026 年 6 月 2 日晚上到三亚设计。三亚三晚固定住椰梦长廊，西岛和亚龙湾优先，免税购物不单独为了海棠湾折返，6 月 5 日晚上转海口。
             </p>
           </div>
           <div class="route-shell">
@@ -163,6 +288,8 @@
                 <span>合肥</span>
                 <b></b>
                 <span>三亚</span>
+                <b></b>
+                <span>西岛/亚龙湾</span>
                 <b></b>
                 <span>海口</span>
                 <b></b>
@@ -185,8 +312,8 @@
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/WormholeLibrary01.jpg?width=900" alt="海口云洞图书馆" />
               <div>
                 <span>必留</span>
-                <h3>西岛 + 椰梦长廊 + 云洞图书馆</h3>
-                <p>最符合海景房、沙滩、日落、城市感的组合，交通也顺。</p>
+                <h3>西岛 + 亚龙湾 + 椰梦长廊</h3>
+                <p>西岛补海岛体验，亚龙湾补清澈海水，椰梦长廊负责住处便利和日落。</p>
               </div>
             </article>
             <article class="pick">
@@ -200,9 +327,9 @@
             <article class="pick">
               <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Bodhisattva_Guanyin_Statue%2C_Nanshan_Guanyin_Park_%2810098590593%29.jpg?width=900" alt="三亚南山文化旅游区" />
               <div>
-                <span>二选一</span>
-                <h3>南山文化区 or 蜈支洲岛</h3>
-                <p>南山偏文化和出片，蜈支洲偏水上项目但更贵更晒；只建议二选一。</p>
+                <span>可选加项</span>
+                <h3>南山 / 蜈支洲 / 海棠湾 cdf</h3>
+                <p>南山、蜈支洲和海棠湾 cdf 都占时间，只按兴趣替换，不和主线全塞。</p>
               </div>
             </article>
           </div>
@@ -218,11 +345,12 @@
           </div>
           <div class="food-board">
             <article>
-              <h3>三亚吃什么</h3>
+              <h3>椰梦长廊周边吃什么</h3>
               <ul>
-                <li>第一市场/火车头海鲜广场：皮皮虾、芒果螺、石斑、和乐蟹，先问斤价和加工费。</li>
+                <li>住三亚湾吃饭方便，海月广场、亿恒夜市、第一市场、火车头海鲜广场都比海棠湾好安排。</li>
+                <li>海鲜：皮皮虾、芒果螺、石斑、和乐蟹，先问斤价、加工费和称重方式。</li>
                 <li>椰子鸡、糟粕醋火锅、抱罗粉、陵水酸粉、清补凉。</li>
-                <li>晚到当晚别硬上海鲜大餐，清补凉或粉汤更舒服。</li>
+                <li>晚到当晚别硬上海鲜大餐，清补凉或粉汤更舒服；玩海那天晚上回市区吃更灵活。</li>
               </ul>
             </article>
             <article>
@@ -308,7 +436,7 @@
               id="tripNote"
               rows="8"
               maxlength="900"
-              placeholder="比如：6/4 想把南山换成后海冲浪；海口想加一家老爸茶；记得带防晒喷雾和防水袋。"
+              placeholder="比如：6/4 想把亚龙湾后半段换成海棠湾 cdf；6/5 想把天涯小镇换成南山；记得带防晒喷雾和防水袋。"
             ></textarea>
             <div class="note-toolbar">
               <span id="noteCount">0/900</span>
@@ -353,6 +481,18 @@
               <i data-lucide="train"></i>
               12306：三亚到海口动车
             </a>
+            <a href="https://gss.mof.gov.cn/gzdt/zhengcefabu/202006/t20200629_3540437.htm" target="_blank" rel="noreferrer">
+              <i data-lucide="badge-percent"></i>
+              财政部：海南离岛免税政策
+            </a>
+            <a href="https://www.cdfgsanya.com/" target="_blank" rel="noreferrer">
+              <i data-lucide="shopping-bag"></i>
+              cdf：三亚国际免税城
+            </a>
+            <a href="https://www.cdfhkcity.com/" target="_blank" rel="noreferrer">
+              <i data-lucide="shopping-cart"></i>
+              cdf：海口国际免税城
+            </a>
             <a href="https://www.tripadvisor.cn/Attractions-g297427-Activities-Sanya_Hainan.html" target="_blank" rel="noreferrer">
               <i data-lucide="map"></i>
               TripAdvisor：三亚景点口碑
@@ -363,7 +503,7 @@
             </a>
             <a href="https://www.xiaohongshu.com/search_result?keyword=%E4%B8%89%E4%BA%9A%203%E5%A4%A92%E6%99%9A%20%E8%A5%BF%E5%B2%9B" target="_blank" rel="noreferrer">
               <i data-lucide="search"></i>
-              小红书站内关键词：三亚 3天2晚 西岛
+              小红书站内关键词：三亚 3天 后海 蜈支洲
             </a>
             <a href="https://www.zhihu.com/search?type=content&q=%E4%B8%89%E4%BA%9A%20%E6%B5%B7%E5%8F%A3%205%E5%A4%A9%20%E6%97%85%E8%A1%8C%E6%94%BB%E7%95%A5" target="_blank" rel="noreferrer">
               <i data-lucide="messages-square"></i>

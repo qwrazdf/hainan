@@ -1,6 +1,6 @@
 # qwrazdf 海南海风计划
 
-这是一个可直接部署到 GitHub Pages 的静态个人旅行网站，内容围绕 2026 年 6 月 2 日从合肥出发、三亚到海口的 5-6 天路线规划。
+这是一个可直接部署到 GitHub Pages 的静态个人旅行网站，内容围绕 2026 年 6 月 2 日从合肥出发、椰梦长廊住 3 晚、西岛和亚龙湾补海岛/沙滩体验、免税购物优先放海口、第三晚去海口、海口 2 天后返合肥的路线规划。
 
 ## 本地浏览
 
@@ -15,7 +15,7 @@ python3 -m http.server 8000
 ## 部署到 GitHub Pages
 
 1. 新建或使用仓库 `hainan`，也可以使用个人主页仓库 `qwrazdf.github.io`。
-2. 把 `index.html`、`styles.css`、`script.js`、`README.md` 推送到仓库根目录。
+2. 把 `index.html`、`styles.css`、`script.js`、`README.md` 和 `assets/` 推送到仓库根目录。
 3. 在 GitHub 仓库的 Settings → Pages 中选择从 `main` 分支根目录发布。
 4. 若使用 `hainan`，发布地址通常是 `https://qwrazdf.github.io/hainan/`。
 
